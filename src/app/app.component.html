@@ -1,0 +1,12 @@
+Enter Name : <input type="text" (keyup)="filterByText($event.target.value)">
+<br><br>
+<table border="2">
+	<tr>
+		<th>
+			Employee
+		</th>
+	</tr>
+	<ul>
+		<li *ngFor="let e of employees">{{e.name}}</li>
+	</ul>
+</table>
